@@ -11,6 +11,9 @@ jobs:
       - name: Install deps
         working-directory: ./client
         run: yarn
+      - name: CP google service file
+        working-directory: ./client
+        run: cp ./src/config/google.local.ts ./src/config/google.ts
       - name: Check types
         working-directory: ./client
         run: yarn typecheck
