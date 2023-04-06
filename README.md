@@ -2,7 +2,7 @@
 
 Firstly setup client
 
-### client/README.md
+### https://github.com/qscgyjqscgyj/test_myeasyfarm/blob/main/client/README.md
 
 To start project run
 
