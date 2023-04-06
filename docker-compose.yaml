@@ -1,0 +1,21 @@
+version: '3.8'
+services:
+  mongodb:
+    image: mongo:4.4
+    container_name: mongodb
+    restart: always
+    ports:
+      - 27017:27017
+    environment:
+      MONGO_INITDB_DATABASE: test_myeasyfarm
+  backend:
+    build: .
+    container_name: backend
+    command: python run.py
+    ports:
+      - 8000:8000
+    environment:
+      MONGO_DB_NAME: test_myeasyfarm
+      MONGO_HOST: mongodb
+    depends_on:
+      - mongodb

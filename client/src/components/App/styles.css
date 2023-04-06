@@ -1,0 +1,18 @@
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+}
+
+.logoWrapper {
+    flex: 1;
+    padding: 10px 5px 10px 5px;
+}
+
+.logo {
+    height: 40px;
+}

@@ -1,0 +1,11 @@
+.partfieldsWrapper {
+    display: flex;
+    flex-direction: row;
+}
+
+.activePartfieldBlock {
+    border-top: 0.5px solid #e0e0e0;
+    padding: 0 20px 0 20px;
+    height: 100%;
+    width: 100%;
+}
