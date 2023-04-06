@@ -9,13 +9,17 @@ jobs:
         with:
           node-version: 16
       - name: Install deps
+        working-directory: ./client
         run: yarn
       - name: Check types
+        working-directory: ./client
         run: yarn typecheck
       - name: Run backend
+        working-directory: ./
         run: docker-compose -f docker-compose.yaml up --build -d
       - name: Show logs
         if: ${{ failure() }}
         run: docker-compose logs
       - name: Run tests
+        working-directory: ./client
         run: yarn test
