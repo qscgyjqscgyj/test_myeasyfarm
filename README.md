@@ -1,9 +1,15 @@
-## Setup
+## Client configuration
 
-Firstly setup client
+Install dependencies:
 
-### https://github.com/qscgyjqscgyj/test_myeasyfarm/blob/main/client/README.md
+`yarn`
 
-To start project run
+Copy `google.local.ts` file to `google.ts` and paste your GOOGLE API KEY.
 
-### `./run.sh`
+`cp src/services/google.local.ts src/services/google.ts`
+
+## Starting
+
+To start the project execute command:
+
+`./run.sh`

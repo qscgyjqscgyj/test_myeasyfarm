@@ -13,7 +13,7 @@ jobs:
         run: yarn
       - name: CP google service file
         working-directory: ./client
-        run: cp src/service/google.local.ts src/service/google.ts
+        run: cp src/services/google.local.ts src/services/google.ts
       - name: Check types
         working-directory: ./client
         run: yarn typecheck
